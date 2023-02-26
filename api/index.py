@@ -23,7 +23,7 @@ def index():
     return render_template("index.html", result=result)
 
 def generate_prompt(keywords):
-    return """websites that offer or contain {} including the link""".format(keywords.capitalize())
+    return """websites that offer or contain {} including a functional link""".format(keywords.capitalize())
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=5050, debug=True)
